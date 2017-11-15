@@ -44,7 +44,7 @@ function Transfer() {
         $("#" + "companyName").html(origins.ownerName().toString());  
         $("#" + "contractAddress").html(contractAddress);  
         $("#" + "beneficiary").html(origins.beneficiaryAddress().toString());
-        $("#" + "INIenergyComit").html(origins.promisedCommitment().toNumber()); 
+        $("#" + "INIenergyComit").html(origins.purchasedCommitment().toNumber()); 
         
         $("#" + "energyComit").html(origins.energyCommitment().toNumber());  
         $("#" + "moneyComit").html(origins.moneyCommited().toNumber()/1000000000000000000);  
