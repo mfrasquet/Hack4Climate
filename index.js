@@ -1,6 +1,6 @@
 Web3 = require('web3')
-//web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
-web3 = new Web3(new Web3.providers.HttpProvider("https://rinkeby.infura.io/W0nFbPT8SCEfM5DUCPW6"));
+web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+//web3 = new Web3(new Web3.providers.HttpProvider("https://rinkeby.infura.io/W0nFbPT8SCEfM5DUCPW6"));
 
 //Origin Stake
 
@@ -48,7 +48,7 @@ function Transfer() {
         $("#" + "INIenergyComit").html(origins.promisedCommitment().toNumber()); 
         
         $("#" + "energyComit").html(origins.energyCommitment().toNumber());  
-        $("#" + "moneyComit").html(origins.moneyCommited().toNumber());  
+        $("#" + "moneyComit").html(origins.moneyCommited().toNumber()/1000000000000000000);  
         
         var d1 = new Date(origins.deadline().toNumber()*1000);
         console.log(`Constructor: ${d1}`);
