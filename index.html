@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Origins Stake</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="container">
+  <h1>Origins Stake </h1></br>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Eco-Commitment <span id="contractAddress"></span></th>
+          <th>Initial Value</th>
+          <th>Actual value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>Submitted by: <b><span id="companyName"></span></b>. Current deadline: <b><span id="deadline2"></span></b></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+          <td>Green energy consumption commited [kWh]</td>
+          <td id="INIenergyComit"></td>
+          <td id="energyComit"></td>
+        </tr>
+        <tr>
+            <td>Deposit commitment [fiat]</td>
+            <td></td>
+            <td id="moneyComit"></td>
+        </tr>
+        <tr>
+            <td>Value transfered to beneficiary: <span id="beneficiary"></span></td>
+            <td></td>
+            <td id="benefWithdraw"></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+    </br>
+
+</body>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="./index.js"></script>
+</html>
