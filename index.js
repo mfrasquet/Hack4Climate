@@ -1,6 +1,6 @@
 Web3 = require('web3')
-web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
-//web3 = new Web3(new Web3.providers.HttpProvider("https://rinkeby.infura.io/W0nFbPT8SCEfM5DUCPW6"));
+//web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+web3 = new Web3(new Web3.providers.HttpProvider("https://rinkeby.infura.io/W0nFbPT8SCEfM5DUCPW6"));
 
 //Origin Stake
 
